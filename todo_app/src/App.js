@@ -20,16 +20,20 @@ class App extends React.Component {
   handleInputChange(e) {
     this.setState({ newTodo: e.target.value });
   }
-
   clickHandler(){
     const currentState = this.state.todolist;
-// 
+              //current state of the array.
     if(this.state.newTodo !== ""){
+              //if newTodo state is not an empty string.
       currentState.push(this.state.newTodo)
-// 
+              //then push it to currentstate Array
       this.setState({todoList: currentState})
+            //and update state ? 
     }
+  }//clickHandler
 
+  removeItem(e){
+    
   }
   render() {
     return (
