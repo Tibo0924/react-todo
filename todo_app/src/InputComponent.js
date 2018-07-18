@@ -4,9 +4,9 @@ import React from 'react';
 
 const InputComponent = (props) => {
   return (
-    <div>
-      <input type="text" onChange={props.inputFunction}></input>
-      <button onClick={props.induljunkel}>Add todo!</button>
+    <div className="text-center">
+      <input type="text" onChange={props.inputFunction} placeholder="add something"></input>
+      <button className="btn btn-success" onClick={props.induljunkel}>Add todo!</button>
     </div>
   )
 }
