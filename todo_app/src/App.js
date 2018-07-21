@@ -18,9 +18,10 @@ class App extends React.Component {
   handleInputChange(e) {
     this.setState({ newTodo: e.target.value });
   }
-  removeItem(item){
-    console.log(item)
+  removeItem(props){
+    console.log('aha')
   }
+
   clickHandler(){
     const currentState = this.state.todolist;
     const newItem = this.state.newTodo;
